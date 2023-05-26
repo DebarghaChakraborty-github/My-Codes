@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta="UTR-8>
+    <title>
+      Survey Form
+    </title>
+  </head>
+<body>
+  <main>
+    <h1 id="title"> free CodeCmp Survey Form</h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form" action="mailto-debarghachakrabortyofficial@gmail.com" post>
+    <fieldset>
+      <article id="personal-details">
+        <label id="name-label">Name<input type="text" id="name" placeholder="Enter your name" required></label>
+        <label id="email-label">Email<input type="email" id="email" placeholder="Enter your Email" required></label>
+        <label id="number-label">Age<input type="number" id="number" min="18" max="120" placeholder="Age">
+      </article>
+
+      <article id="role">
+        <label id="label-role">Which option best describes your current role?</label>
+        <select type="dropdown" id="dropdown" class="role-dropdown">
+          <option selected id="0">--Select current role--</option>
+          <option id="1"> Student</option>
+          <option id="2"> Full Time Job</option>
+          <option id="3"> Full TIme Learner</option>
+          <option id="4"> Prefer Not to say</option>
+          <option id="5"> Others </option>
+        </select>
+          <label id="label-others">If others* Please Mention<textarea id="textarea-others" class="textbox-others"></textarea></label>          
+      </article>
+
+      <article id="article-reference">
+        <label id="label-reference">Would you recommend freeCodeCamp to a friend ?</label>
+          <label id="label-definitely"><input type="radio" id="Definitely" name="ref" value="definitely"/>Definitely</label>
+          <label id="label-yes"><input type="radio" id="Yes" name="ref" value="yes"/>Yes</label>
+          <label id="label-no"><input type="radio" id="No" name="ref" value="no"/>No</label>
+      </article>
+
+      <article id="feature">
+        <label id="label-feature">What is your favorite feature of freeCodeCamp?</article>
+          <select type="dropdown" id="dropdown-feature" class="dropdown-feature">
+            <option selected id="f0">--Select an option--</option>
+            <option id="f1"> Challenges </option>
+            <option id="f2"> Project</option>
+            <option id="f3"> Community </option>
+            <option id="f4"> Open Source </option>
+          </select>
+
+        <article id="feedback">
+          <label id="label-feedback">What would you like to see improved? (Check all that apply</label>
+          <label id="label-front-end"><input type="checkbox" value="Back-end-Projects"> Front-end Projects</label>
+<label id="label-back-end"><input type="checkbox" value="Back-end-Projects">Back-end Projects</label>
+<label id="label-data"><input type="checkbox" value="Data-Visualization">Data Visualization</label>
+<label id="label-challenges"><input type="checkbox" value="Challenges">Challenges</label>
+<label id="label-openS"><input type="checkbox" value="Open-Source-Community">Open Source Community</label>
+<label id="label-ghr"><input type="checkbox" value="Gitter-help-rooms">Gitter help rooms</label>
+<label id="label-videos"><input type="checkbox" value="Videos">Videos</label>
+<label id="label-CMeet"><input type="checkbox" value="City-Meetups">City Meetups</label>
+<label id="label-Wiki"><input type="checkbox" value="Wiki">Wiki</label>
+<label id="label-Forum"><input type="checkbox" value="Forum">Forum</label>
+<label id="label-Additional"><input type="checkbox" value="Additional-Courses">Additional Courses</label>
+        </article>
+
+        <article>
+          <label>Any comments or suggestions?</label>
+          <textarea>
+          </textarea>
+
+        <button type="submit" id="submit" class="submit" >S U B M I T</button>
+      </article>
+    </fieldset>
+    </form>
+  </main>
+</body>
